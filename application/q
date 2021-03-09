@@ -1,0 +1,50 @@
+ cve_mun |            nom_mun            | region_mun |  sup_mun  
+---------+-------------------------------+------------+-----------
+ 001     | Abasolo                       | IV Sur     |  617.0000
+ 002     | Acámbaro                      | IV Sur     |  880.3000
+ 004     | Apaseo el Alto                | III Centro |  374.9000
+ 005     | Apaseo el Grande              | III Centro |  421.6000
+ 006     | Atarjea                       | I Noreste  |  314.9000
+ 007     | Celaya                        | III Centro |  554.6000
+ 009     | Comonfort                     | III Centro |  490.0000
+ 010     | Coroneo                       | IV Sur     |  124.2000
+ 011     | Cortazar                      | III Centro |  336.2000
+ 012     | Cuerámaro                     | IV Sur     |  261.1000
+ 013     | Doctor Mora                   | I Noreste  |  231.4000
+ 014     | Dolores Hidalgo CIN           | II Norte   | 1660.3000
+ 015     | Guanajuato                    | II Norte   | 1016.9000
+ 016     | Huanímaro                     | IV Sur     |  127.9000
+ 017     | Irapuato                      | III Centro |  853.4000
+ 018     | Jaral del Progreso            | III Centro |  175.9000
+ 019     | Jerécuaro                     | IV Sur     |  885.6000
+ 020     | León                          | III Centro | 1224.9000
+ 008     | Manuel Doblado                | IV Sur     |  822.1000
+ 021     | Moroleón                      | IV Sur     |  160.2000
+ 022     | Ocampo                        | II Norte   | 1029.0000
+ 023     | Pénjamo                       | IV Sur     | 1565.5000
+ 024     | Pueblo Nuevo                  | IV Sur     |   60.0000
+ 025     | Purísima del Rincón           | III Centro |  291.5000
+ 026     | Romita                        | III Centro |  441.9000
+ 027     | Salamanca                     | III Centro |  757.7000
+ 028     | Salvatierra                   | IV Sur     |  594.6000
+ 029     | San Diego de la Unión         | II Norte   | 1015.8000
+ 030     | San Felipe                    | II Norte   | 3014.9000
+ 031     | San Francisco del Rincón      | III Centro |  426.6000
+ 032     | San José Iturbide             | I Noreste  |  549.7000
+ 033     | San Luis de la Paz            | I Noreste  | 2036.8000
+ 003     | San Miguel de Allende         | II Norte   | 1558.1000
+ 034     | Santa Catarina                | I Noreste  |  195.2000
+ 035     | Santa Cruz de Juventino Rosas | III Centro |  430.3000
+ 036     | Santiago Maravatío            | IV Sur     |   83.9000
+ 037     | Silao de la Victoria          | III Centro |  540.0000
+ 038     | Tarandacuao                   | IV Sur     |  121.1000
+ 039     | Tarimoro                      | III Centro |  335.2000
+ 040     | Tierra Blanca                 | I Noreste  |  410.5000
+ 041     | Uriangato                     | IV Sur     |  116.7000
+ 042     | Valle de Santiago             | IV Sur     |  822.0000
+ 043     | Victoria                      | I Noreste  | 1050.2000
+ 044     | Villagrán                     | III Centro |  128.8000
+ 045     | Xichú                         | I Noreste  |  913.8000
+ 046     | Yuriria                       | IV Sur     |  668.3000
+(46 rows)
+
