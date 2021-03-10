@@ -7,7 +7,6 @@
             <div class="row mb-3">
                 <div class="col-md-9 border-right">
 					<div id="map"  style="width: 100%; height: 300px; float:left"></div>
-
 					<script type="text/javascript">
                         // crear layer openstreetmap
                         var backgUrl = 'http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png';
@@ -28,7 +27,7 @@
                                     weight: 2,
                                     opacity: 1,
                                     color: '#00f',
-                                    dashArray: '3',
+                                    dashArray: '',
                                     fillOpacity: 0.8
                                 };
                             } else {
@@ -43,6 +42,8 @@
 
                         function onEachFeature(feature, layer) {
                             layer.on({
+                                mouseover: highlightFeature,
+                                mouseout: resetHighlight,
                                 click: function(e){
                                     baseurl = '<?= base_url() ?>';
                                     newmun = feature.properties.CVE_MUN;
@@ -52,12 +53,50 @@
                             });
                         }
 
+                        // control de informacion
+                        var info = L.control();
+                        info.onAdd = function(map) {
+                            this._div = L.DomUtil.create('div', 'info');
+                            this.update();
+                            return this._div;
+                        }
+
+                        info.update = function(props) {
+                            this._div.innerHTML = '<h6>Mostrar ficha municipal</h6>' + (props ? '<b>' + props.NOM_MUN + '</b>' : 'Seleccione un municipio');
+                        }
+
+						function highlightFeature(e) {
+							var layer = e.target;
+
+							layer.setStyle({
+								weight: 4,
+								color: '#00f',
+								dashArray: '',
+								fillOpacity: 0.2
+							});
+
+							if (!L.Browser.ie && !L.Browser.opera) {
+								layer.bringToFront();
+							}
+
+							info.update(layer.feature.properties);
+						}
+
+						function resetHighlight(e) {
+							capa_municipios.resetStyle(e.target);
+							info.update();
+						}
+
                         // crear mapa en el div "map" y centrarlo en Guanajuato
                         var map = L.map('map', {
-                        center: new L.LatLng(20.85304, -100.94788), 
+                        center: new L.LatLng(21.25304, -100.94788), 
                         zoom: 7,
                         layers: [backg_lyr, capa_municipios]
                         });
+
+                        // agregar control info
+                        info.addTo(map);
+
 					</script>
                 </div>
                 <div class="col-md-3">
