@@ -34,7 +34,6 @@
 					data: {
 						labels: ['Trabajo', 'Familiar', 'Estudio', 'Inseguridad delictiva', 'Otros'],
 						datasets: [{
-							label: '# of Votes',
                             data: [trabajo, familiar, estudio, inseguridad, otros],
 							backgroundColor: [
                             'rgba(112, 173, 71, 1)',
@@ -55,13 +54,14 @@
                     },
                     options: {
                         plugins: {
-                            labels: {
-                                render: 'percentage',
-                                precision: 2,
-                                showZero: true,
-                                fontColor: '#fff',
-                                fontStyle: 'bold',
-                                textShadow: true,
+                            datalabels: {
+                                color: 'white',
+                                font: {
+                                    weight: 'bold'
+                                },
+                                formatter: function(value, context) {
+                                    return value.toFixed(2) + '%';
+                                }
                             }
                         }
                     }
