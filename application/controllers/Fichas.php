@@ -10,6 +10,7 @@ class Fichas extends CI_Controller {
         $this->load->model('poblacion_model');
         $this->load->model('migracion_model');
         $this->load->model('educacion_model');
+        $this->load->model('vivienda_model');
     }
 
     public function lista()
@@ -28,6 +29,7 @@ class Fichas extends CI_Controller {
         $data['poblacion'] = $this->poblacion_model->get_poblacion($cve_mun);
         $data['migracion'] = $this->migracion_model->get_migracion($cve_mun);
         $data['educacion'] = $this->educacion_model->get_educacion($cve_mun);
+        $data['vivienda'] = $this->vivienda_model->get_vivienda($cve_mun);
 
         $this->load->view('templates/header', $data);
         $this->load->view('fichas/detalle', $data);

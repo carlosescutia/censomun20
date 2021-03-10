@@ -7,7 +7,7 @@
             <div class="row mb-3">
                 <div class="col-md-6 border-right border-bottom">
                     <h6>Población de 15 años y más según nivel de escolaridad</h6>
-                    <table class="table table-sm table-borderless text-left">
+                    <table class="table table-sm table-borderless table-striped text-left">
                         <?php 
                         $num = new \NumberFormatter("es-MX", \NumberFormatter::DECIMAL); 
                         $porciento = new \NumberFormatter("es-MX", \NumberFormatter::PERCENT); 
@@ -68,7 +68,7 @@
                     <h6>Tasa de alfabetización</h6>
                     <div class="row d-flex flex-wrap align-items-center">
                         <div class="col-md-6">
-                            <img class="img-fluid" src="<?=base_url()?>img/libro.png" style="width:80%">
+                            <img class="img-fluid" src="<?=base_url()?>img/libro.svg" style="width:80%">
                         </div>
                         <div class="col-md-6">
                             <p class="mb-0">15 a 24 años</p>

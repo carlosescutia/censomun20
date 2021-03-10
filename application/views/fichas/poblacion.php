@@ -3,7 +3,7 @@
         <h3>Población</h3>
     </div>
     <div class="card-body pb-0">
-		<table class="table table-sm table-borderless text-left">
+		<table class="table table-sm table-borderless table-striped text-left">
             <thead>
                 <tr>
                     <th>Grupos</th>
