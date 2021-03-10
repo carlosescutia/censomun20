@@ -33,6 +33,7 @@
 
         <!-- Chart.js -->
         <script src="<?=base_url()?>js/Chart.min.js"></script>
+        <script src="<?=base_url()?>js/chartjs-plugin-labels.min.js"></script>
         <link rel="stylesheet" type="text/css" href="<?=base_url()?>js/Chart.min.css"/>
 
         <!-- leaflet -->

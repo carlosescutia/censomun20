@@ -52,7 +52,19 @@
 							],
 							borderWidth: 1
 						}]
-					}
+                    },
+                    options: {
+                        plugins: {
+                            labels: {
+                                render: 'percentage',
+                                precision: 2,
+                                showZero: true,
+                                fontColor: '#fff',
+                                fontStyle: 'bold',
+                                textShadow: true,
+                            }
+                        }
+                    }
 				});
 			</script>
         </div>
