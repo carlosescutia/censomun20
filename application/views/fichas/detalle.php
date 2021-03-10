@@ -21,6 +21,7 @@
             </div>
             <div class="col-md-6 pr-0">
                 <?php include 'localizacion.php' ?>
+                <?php include 'vivienda.php' ?>
             </div>
         </div>
         <!-- Economia -->

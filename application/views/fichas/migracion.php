@@ -19,7 +19,7 @@
 			</tr>
 		</table>
         <div>
-            <canvas id="myChart"></canvas>
+            <canvas id="graf_migracion"></canvas>
 			<script>
                 trabajo = <?= $migracion['migrante_trabajo'] * 100 ?>;
                 familiar = <?= $migracion['migrante_familiar'] * 100 ?>;
@@ -28,8 +28,8 @@
                 otros = <?= $migracion['migrante_otros'] * 100 ?>;
 
                 Chart.defaults.global.legend.position = 'right';
-				var ctx = document.getElementById('myChart').getContext('2d');
-				var myChart = new Chart(ctx, {
+				var ctx = document.getElementById('graf_migracion').getContext('2d');
+				var graf_migracion = new Chart(ctx, {
 					type: 'doughnut',
 					data: {
 						labels: ['Trabajo', 'Familiar', 'Estudio', 'Inseguridad delictiva', 'Otros'],
