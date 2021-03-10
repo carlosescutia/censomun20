@@ -49,21 +49,21 @@
                 Chart.defaults.global.legend.display = false;
 				var ctx = document.getElementById('graf_vivienda').getContext('2d');
 				var graf_vivienda = new Chart(ctx, {
+                    plugins: [ChartDataLabels],
 					type: 'horizontalBar',
 					data: {
 						labels: ['Sanitario', 'Drenaje', 'Energía eléctrica', 'Agua'],
 						datasets: [{
-							label: '',
                             data: [sanitario, drenaje, electricidad, agua],
 							backgroundColor: [
                             'rgba(100, 171, 235, 1)',
-							'rgba(255, 212, 0)',
+							'rgba(255, 212, 0, 1)',
                             'rgba(161, 229, 88, 1)',
                             'rgba(0, 123, 212, 1)'
 							],
 							borderColor: [
                             'rgba(100, 171, 235, 1)',
-							'rgba(255, 212, 0)',
+							'rgba(255, 212, 0, 1)',
                             'rgba(161, 229, 88, 1)',
                             'rgba(0, 123, 212, 1)'
 							],
@@ -72,13 +72,17 @@
                     },
                     options: {
                         plugins: {
-                            labels: {
-                                render: 'value',
-                                precision: 2,
-                                showZero: true,
-                                fontColor: '#757575',
-                                fontStyle: 'bold',
-                                textShadow: true,
+                            datalabels: {
+                                align: 'end',
+                                anchor: 'enter',
+                                color: 'black',
+                                clamp: true,
+                                font: {
+                                    weight: 'bold'
+                                },
+                                formatter: function(value, context) {
+                                    return value.toFixed(2) + '%';
+                                }
                             }
                         }
                     }
