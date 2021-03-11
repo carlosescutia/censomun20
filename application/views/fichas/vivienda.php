@@ -4,7 +4,7 @@
     </div>
     <div class="card-body pb-0">
         <div class="row">
-            <table class="table table-sm table-borderless text-left">
+            <table class="table table-sm table-borderless table-striped text-left">
                 <?php 
                 $num = new \NumberFormatter("es-MX", \NumberFormatter::DECIMAL); 
                 $num->setAttribute(\NumberFormatter::MIN_FRACTION_DIGITS, 0);

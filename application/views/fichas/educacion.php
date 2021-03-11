@@ -15,7 +15,7 @@
                         $porciento->setAttribute(\NumberFormatter::MAX_FRACTION_DIGITS, 2);
                         ?>
                         <tr>
-                            <td>
+                            <td class="text-center">
                                 <p class="mb-0">Población de 15 +</p>
                             </td>
                             <td>
@@ -23,7 +23,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="text-center">
                                 <p class="mb-0"><?= $porciento->format($educacion['educ_15_sin_escolaridad']) ?></p>
                             </td>
                             <td>
@@ -31,7 +31,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="text-center">
                                 <p class="mb-0"><?= $porciento->format($educacion['educ_15_basica']) ?></p>
                             </td>
                             <td>
@@ -39,7 +39,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="text-center">
                                 <p class="mb-0"><?= $porciento->format($educacion['educ_15_media']) ?></p>
                             </td>
                             <td>
@@ -47,7 +47,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="text-center">
                                 <p class="mb-0"><?= $porciento->format($educacion['educ_15_superior']) ?></p>
                             </td>
                             <td>
@@ -55,7 +55,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="text-center">
                                 <p class="mb-0"><?= $porciento->format($educacion['educ_15_no_especificado']) ?></p>
                             </td>
                             <td>
