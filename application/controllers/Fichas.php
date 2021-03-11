@@ -26,6 +26,7 @@ class Fichas extends CI_Controller {
 
     public function detalle($cve_mun)
     {
+        $data['municipios'] = $this->municipios_model->get_municipios();
         $data['municipio'] = $this->municipios_model->get_municipio($cve_mun);
         $data['gobierno'] = $this->gobierno_model->get_gobierno($cve_mun);
         $data['poblacion'] = $this->poblacion_model->get_poblacion($cve_mun);
