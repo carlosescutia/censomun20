@@ -1,5 +1,5 @@
 <div class="card border-0">
-    <div class="card-header rounded-0 text-white text-left pt-1 pb-0" style="background-color:#0262c9">
+    <div class="card-header rounded-0 text-white text-left pt-1 pb-0 background-principal">
         <h3>Localización</h3>
     </div>
     <div class="card-body pb-0">

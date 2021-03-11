@@ -1,5 +1,5 @@
 <div class="card border-0">
-    <div class="card-header rounded-0 text-white text-left pt-1 pb-0" style="background-color:#0262c9">
+    <div class="card-header rounded-0 text-white text-left pt-1 pb-0 background-principal">
         <h3>Educacion</h3>
     </div>
     <div class="card-body pb-0">
@@ -68,7 +68,7 @@
                     <h6>Tasa de alfabetización</h6>
                     <div class="row d-flex flex-wrap align-items-center">
                         <div class="col-md-6">
-                            <img class="img-fluid" src="<?=base_url()?>img/libro.svg" style="width:80%">
+                            <img class="img-fluid" src="<?=base_url()?>img/libro.svg" style="width:90px">
                         </div>
                         <div class="col-md-6">
                             <p class="mb-0">15 a 24 años</p>
