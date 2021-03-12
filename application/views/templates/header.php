@@ -81,7 +81,7 @@
                 <div class="row ml-1 mb-1">
                     <div class="dropdown mr-1">
                         <button class="btn btn-secondary dropdown-toggle background-secundario border-secundario" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Abasolo - Gto
+                            Aba - Gto
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <?php for ($i = 0; $i <= 14; $i++) { ?>
@@ -91,7 +91,7 @@
                     </div>
                     <div class="dropdown mr-1">
                         <button class="btn btn-secondary dropdown-toggle background-secundario border-secundario" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Huan - S Felipe
+                            Huan - S Fel
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <?php for ($i = 15; $i <= 29; $i++) { ?>
