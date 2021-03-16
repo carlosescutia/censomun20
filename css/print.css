@@ -2,6 +2,10 @@ body {
     padding-top: 0;
 }
 
+[role="main"] {
+  padding-top: 10px; /* Space for fixed navbar */
+}
+
 .card {
     display:block !important;
 }

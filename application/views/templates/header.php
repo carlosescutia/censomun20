@@ -72,7 +72,7 @@
             </div>
 
             <!-- boton para menu colapsado -->
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" >
+            <button class="navbar-toggler navbar-toggler-right d-print-none" type="button" data-toggle="collapse" data-target="#navbarCollapse" >
                 <span class="navbar-toggler-icon"></span>
             </button>
 
