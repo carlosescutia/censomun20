@@ -3,9 +3,9 @@
         <h3>Economía</h3>
     </div>
     <div class="card-body pb-0">
-        <div class="col-md-12">
+        <div class="col-sm-12">
             <div class="row mb-3">
-                <div class="col-md-6 border-right">
+                <div class="col-sm-6 border-right">
                     <h6>Población económicamente activa (población de 15 años y más)</h6>
                     <table class="table table-sm table-borderless table-striped text-left">
                         <?php 
@@ -57,7 +57,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6">
                     <h6>Porcentaje de la PEA ocupada</h6>
                     <table class="table table-sm table-borderless table-striped text-left">
                         <thead>
