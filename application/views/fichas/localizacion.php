@@ -3,9 +3,9 @@
         <h3>Localización</h3>
     </div>
     <div class="card-body pb-0">
-        <div class="col-md-12">
+        <div class="col-sm-12">
             <div class="row mb-3">
-                <div class="col-md-9 border-right">
+                <div class="col-sm-9 border-right">
 					<div id="map"  style="width: 100%; height: 300px; float:left"></div>
 					<script type="text/javascript">
                         // crear layer openstreetmap
@@ -99,7 +99,7 @@
 
 					</script>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-3">
                     <?php 
                     $num = new \NumberFormatter("es-MX", \NumberFormatter::DECIMAL); 
                     $num->setAttribute(\NumberFormatter::MIN_FRACTION_DIGITS, 0);

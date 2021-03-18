@@ -3,9 +3,9 @@
         <h3>Educacion</h3>
     </div>
     <div class="card-body pb-0">
-        <div class="col-md-12">
+        <div class="col-sm-12">
             <div class="row mb-3">
-                <div class="col-md-6 border-right border-bottom">
+                <div class="col-sm-6 border-right border-bottom">
                     <h6>Población de 15 años y más según nivel de escolaridad</h6>
                     <table class="table table-sm table-borderless table-striped text-left">
                         <?php 
@@ -64,13 +64,13 @@
                         </tr>
                     </table>
                 </div>
-                <div class="col-md-6 border-bottom">
+                <div class="col-sm-6 border-bottom">
                     <h6>Tasa de alfabetización</h6>
                     <div class="row d-flex flex-wrap align-items-center">
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                             <img class="img-fluid" src="<?=base_url()?>img/libro.svg" style="width:90px">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                             <p class="mb-0">15 a 24 años</p>
                             <p class="mb-0 font-weight-bold"><?= $porciento->format($educacion['alfabetizacion_15_24']) ?></p>
                             <br />
@@ -81,7 +81,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-12">
+        <div class="col-sm-12">
             <table class="table table-sm table-borderless text-left">
                 <tr>
                     <td>
