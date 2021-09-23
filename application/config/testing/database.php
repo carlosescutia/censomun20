@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '172.16.2.41',
+	'hostname' => 'postgres',
 	'username' => 'censomun20',
 	'password' => 'censomun20',
-	'database' => 'test_censomun20',
+	'database' => 'censomun20',
 	'dbdriver' => 'postgre',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
