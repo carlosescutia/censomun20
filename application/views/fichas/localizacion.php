@@ -9,7 +9,7 @@
 					<div id="map"  style="width: 100%; height: 300px; float:left"></div>
 					<script type="text/javascript">
                         // crear layer openstreetmap
-                        var backgUrl = 'http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png';
+                        var backgUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
                         backgAttrib = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
                         var backg_lyr = L.tileLayer(backgUrl, {maxZoom: 18, attribution: backgAttrib});                        
 
