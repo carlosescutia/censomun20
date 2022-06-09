@@ -30,7 +30,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <p class="mb-0">Promedio de ocupantes por cuarto</p>
+                        <p class="mb-0">Promedio de viviendas con 2.5 ocupantes por cuarto</p>
                     </td>
                     <td>
                         <p class="mb-0"><?= $num->format($vivienda['ocupantes_cuarto']) ?></p>
@@ -41,7 +41,6 @@
         <div class="row mb-3">
             <canvas id="graf_vivienda"></canvas>
 			<script>
-                sanitario = <?= $vivienda['viviendas_sanitario'] * 100 ?>;
                 drenaje = <?= $vivienda['viviendas_drenaje'] * 100 ?>;
                 electricidad = <?= $vivienda['viviendas_electricidad'] * 100 ?>;
                 agua = <?= $vivienda['viviendas_agua'] * 100 ?>;
@@ -52,17 +51,15 @@
                     plugins: [ChartDataLabels],
 					type: 'horizontalBar',
 					data: {
-						labels: ['Sanitario', 'Drenaje', 'Energía eléctrica', 'Agua'],
+						labels: ['Drenaje', 'Energía eléctrica', 'Agua'],
 						datasets: [{
-                            data: [sanitario, drenaje, electricidad, agua],
+                            data: [drenaje, electricidad, agua],
 							backgroundColor: [
-                            'rgba(100, 171, 235, 1)',
 							'rgba(255, 212, 0, 1)',
                             'rgba(161, 229, 88, 1)',
                             'rgba(0, 123, 212, 1)'
 							],
 							borderColor: [
-                            'rgba(100, 171, 235, 1)',
 							'rgba(255, 212, 0, 1)',
                             'rgba(161, 229, 88, 1)',
                             'rgba(0, 123, 212, 1)'
@@ -116,7 +113,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <p class="mb-0">Pantalla plana</p>
+                        <p class="mb-0">Televisión</p>
                     </td>
                     <td>
                         <span class="fa fa-tv"></span>
