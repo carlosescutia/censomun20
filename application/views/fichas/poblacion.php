@@ -82,6 +82,8 @@
 				<td>
 					<p class="mb-0"><?= $poblacion['edad_mediana'] ?> años</p>
 				</td>
+				<td>
+				</td>
 			</tr>
 			<tr>
 				<td>
@@ -89,6 +91,9 @@
 				</td>
 				<td>
                     <p class="mb-0"><?= $num->format($poblacion['tasa_crecimiento']) ?></p>
+				</td>
+				<td>
+                    <p class="mb-0 small">(2010-2020)</p>
 				</td>
 			</tr>
 		</table>

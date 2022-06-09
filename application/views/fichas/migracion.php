@@ -68,6 +68,9 @@
 				});
 			</script>
         </div>
+        <div class="mt-3 text-center">
+            <p class="mb-0 small">* Población que en marzo de 2015 residía en el municipio, entidad federativa o país diferente al de su residencia actual.</p>
+        </div>
 
     </div>
 </div>

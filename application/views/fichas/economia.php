@@ -6,7 +6,7 @@
         <div class="col-sm-12">
             <div class="row mb-3">
                 <div class="col-sm-6 border-right">
-                    <h6>Población económicamente activa (población de 15 años y más)</h6>
+                    <h6>Población económicamente activa (población de 12 años y más)</h6>
                     <table class="table table-sm table-borderless table-striped text-left">
                         <?php 
                         $num = new \NumberFormatter("es-MX", \NumberFormatter::DECIMAL); 
@@ -30,7 +30,7 @@
                                 <p class="mb-0"><?= $num->format($economia['pea_total']) ?></p>
                             </td>
                             <td>
-                                <p class="mb-0"><?= $porciento->format($economia['pea_total'] / $poblacion['pob_total']) ?></p>
+                                <p class="mb-0"><?= $porciento->format($economia['pea_total'] / $poblacion['pob_total']) ?> <span class="small">Respecto a la población total</span></p>
                             </td>
                         </tr>
                         <tr>
@@ -58,7 +58,7 @@
                     </table>
                 </div>
                 <div class="col-sm-6">
-                    <h6>Porcentaje de la PEA ocupada</h6>
+                    <h6>Población Económicamente Activa ocupada</h6>
                     <table class="table table-sm table-borderless table-striped text-left">
                         <thead>
                             <tr>
@@ -78,6 +78,9 @@
                             <td>
                                 <p class="mb-0"><?= $porciento->format($economia['pea_ocupada_total'] / $economia['pea_total']) ?></p>
                             </td>
+                            <td>
+                                <p class="small">Respecto a la PEA</p>
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -89,6 +92,8 @@
                             <td>
                                 <p class="mb-0"><?= $porciento->format($economia['pea_ocupada_hombres'] / $economia['pea_ocupada_total']) ?></p>
                             </td>
+                            <td>
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -99,6 +104,8 @@
                             </td>
                             <td>
                                 <p class="mb-0"><?= $porciento->format($economia['pea_ocupada_mujeres'] / $economia['pea_ocupada_total']) ?></p>
+                            </td>
+                            <td>
                             </td>
                         </tr>
                     </table>

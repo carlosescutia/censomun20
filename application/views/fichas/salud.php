@@ -75,48 +75,5 @@
 				});
 			</script>
         </div>
-        <div class="row">
-            <table class="table table-sm table-borderless text-left">
-                <tr>
-                    <td>
-                        <h5 class="mb-0 text-center">COVID-19</h5>
-                    </td>
-                    <td>
-                        <p class="mb-0">Casos confirmados</p>
-                    </td>
-                    <td>
-                        <?= $num->format($salud['covid_confirmados']) ?></p>
-                    </td>
-                    <td class="text-info">
-                        <span class="fa fa-head-side-mask fa-lg"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="text-center text-success">
-                        <span class="fa fa-virus fa-3x"></span>
-                    </td>
-                    <td>
-                        <p class="mb-0">Defunciones</p>
-                    </td>
-                    <td>
-                        <?= $num->format($salud['covid_defunciones']) ?></p>
-                    </td>
-                    <td>
-                        <span class="fa fa-skull-crossbones fa-lg"></span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="mb-0 small text-center">* Corte al <?= date('d/m/y', strtotime($salud['covid_corte'])) ?></p>
-                    </td>
-                    <td>
-                        <p class="mb-0">Tasa de letalidad</p>
-                    </td>
-                    <td>
-                        <p class="mb-0"><?= $porciento->format($salud['covid_defunciones'] / $salud['covid_confirmados']) ?></p>
-                    </td>
-                </tr>
-            </table>
-        </div>
     </div>
 </div>
